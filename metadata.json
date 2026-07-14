@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Remix:   موقع مطعم أبو قورة الجديد المبهر",
+  "description": "الموقع الرسمي لمطعم أبو قورة لطلب أشهى المأكولات الشعبية والصواني والوجبات والمشويات أونلاين بدقة تحديد موقع عالية ومتابعة الطلبات للعملاء وإدارة كاملة للمطعم.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
