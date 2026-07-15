@@ -3,8 +3,8 @@ import path from 'path';
 import fs from 'fs';
 import fsPromises from 'fs/promises';
 
-// Define MongoDB Connection URL
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://rgl0ogno8m_db_user:kllG1V4lDZOiUzqg@ac-f3s2kej-shard-00-00.xzwb3vq.mongodb.net:27017,ac-f3s2kej-shard-00-01.xzwb3vq.mongodb.net:27017,ac-f3s2kej-shard-00-02.xzwb3vq.mongodb.net:27017/abugoura?ssl=true&replicaSet=atlas-1468q9-shard-0&authSource=admin&appName=Cluster0';
+// Define MongoDB Connection URL with Applet-Isolated database name to prevent data sharing and reset conflicts
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://rgl0ogno8m_db_user:kllG1V4lDZOiUzqg@ac-f3s2kej-shard-00-00.xzwb3vq.mongodb.net:27017,ac-f3s2kej-shard-00-01.xzwb3vq.mongodb.net:27017,ac-f3s2kej-shard-00-02.xzwb3vq.mongodb.net:27017/abugoura_d8b4845126904d439cfb367a6a55b1f2?ssl=true&replicaSet=atlas-1468q9-shard-0&authSource=admin&appName=Cluster0';
 
 // Local JSON Database Fallback Path
 const LOCAL_DB_PATH = path.join(process.cwd(), 'abugoura_db.json');
